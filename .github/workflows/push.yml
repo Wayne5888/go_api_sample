@@ -27,9 +27,12 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
              echo $GITHUB_WORKSPACE
+             echo 
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo ${{ secrets.DOCKER_HUB_USERNAME }}
+          echo ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
