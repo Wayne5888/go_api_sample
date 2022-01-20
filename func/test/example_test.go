@@ -18,7 +18,7 @@ func TestIsFindName(t *testing.T) {
 	got2 := IsFindName("Arthur", []string{"Andy", "Jack", "Daniel", "Wayne"})
 	want2 := false
 
-	if got1 != want1 {
+	if got1 == want1 {
 		t.Errorf("example.IsFindName(string, []string)  got %v, wanted %v", got1, want1)
 	}
 
